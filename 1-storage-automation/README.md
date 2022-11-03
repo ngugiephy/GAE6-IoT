@@ -1,6 +1,6 @@
 # GAE Cabinets Automation
 
-Android Studio application clothes for opening cabinets.
+Android Studio application for opening cabinets.
 
 * Firebase
 * Raspberry PI
