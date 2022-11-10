@@ -14,6 +14,7 @@ print(wlan.isconnected())
 lock=Pin(0,Pin.OUT)
 status=Pin(1,Pin.OUT)
 
+# Mqtt
 mqtt_server='192.168.0.212'
 client_id='PicoW'
 topic_sub='door'
