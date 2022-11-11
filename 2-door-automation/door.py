@@ -17,7 +17,7 @@ status=Pin(1,Pin.OUT)
 
 mqtt_server='192.168.1.4'
 client_id='Pico_door'
-topic_sub='bench/light'
+topic_sub='bench/door'
 
 def message(topic,msg):
     print("New message on topic {}".format(topic.decode('utf-8')))
