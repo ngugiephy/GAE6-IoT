@@ -11,7 +11,10 @@ wlan.connect("Raspberry(Cloud & IOT","abraham123")
 time.sleep(5)
 print(wlan.isconnected())
 
-locker=Pin(0,Pin.OUT)
+locker1=Pin(0,Pin.OUT)
+locker2=Pin(1,Pin.OUT)
+locker3=Pin(2,Pin.OUT)
+locker4=Pin(3,Pin.OUT)
 status=Pin(1,Pin.OUT)
 
 
@@ -23,11 +26,22 @@ def message(topic,msg):
     print("New message on topic {}".format(topic.decode('utf-8')))
     msg=msg.decode('utf-8')
     print(msg)
-    if msg=="on":
-        locker.on()   
+    if msg=="1":
+        locker1.on()   
         time.sleep(1)
-        locker.off() 
-   
+        locker1.off() 
+    if msg=="2":
+        locker2.on()   
+        time.sleep(1)
+        locker2.off() 
+    if msg=="3":
+        locker3.on()   
+        time.sleep(1)
+        locker3.off() 
+    if msg=="4":
+        locker4.on()   
+        time.sleep(1)
+        locker4.off() 
         
        
 def mqtt_connect():
