@@ -109,4 +109,3 @@ host()
 
 # Close socket
 server.close()
-
