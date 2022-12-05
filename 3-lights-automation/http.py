@@ -13,6 +13,7 @@ password = 'Staff@Gearbox'
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 wlan.connect(ssid, password)
+wlan.ifconfig(('192.168.0.184','255.255.255.0','192.168.0.1','8.8.8.8'))
 
 
 html = """<!DOCTYPE html><html>
